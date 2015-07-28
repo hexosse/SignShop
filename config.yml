@@ -43,17 +43,13 @@ DestroyMaterial: gold_axe
 #----------- Language ------------------
 
 # Changes the default language for SignShop
-# Available languages are dutch, english, french, portuguese, russian
+# Available languages are dutch, english, french, portuguese, russian, and spanish
 # Send us your translated configs and we will add it to our supported languages
 # NOTE: If you only want to use the sign aliases from Dutch but keep the messages in English for example, you can do "english, dutch"
 Languages: english
 
 # Fetch more readable item names from the internet (Default = false)
 EnableNamesFromTheWeb: false
-
-# SignShop will fetch item names from Google translate if set to a different language (Default = false)
-EnableGoogleTranslation: false
-
 
 #----------- Mechanics ------------------
 
@@ -126,7 +122,7 @@ MaxSellDistance: 0
 # For more help with this, please read the Quick Reference
 MaxShopsPerPerson: 0
 
-# Maximum number of chests that can be linked to a single sign (Infinite/Default = 0)
+# Maximum number of chests that can be linked to a single sign (Infinite= 0,  Default = 100)
 # Used to prevent players from crashing the server when using a shop because there are too many chests for SignShop to check.
 MaxChestsPerShop: 100
 
@@ -589,3 +585,4 @@ errors:
   not_allowed_on_plot_but_op: You are not allowed to link this on this plot, but you are OP.
   exceeded_max_amount_of_chests_per_shop: You have exceeded the maximum amount of chests (!maxAmountOfChests) that can be linked to a single shop. Please unlink one or more before continuing.
   this_shop_exceeded_max_amount_of_chests: Shop in world '!world' at (!x, !y, !z) exceeds the maximum amount of chests per shop!
+  could_not_complete_operation: Could not complete operation, contact your System Administrator and checks the logs.
